@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7526944692537886238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87036dc68a68a4c8fa8fcdc67d66b146, type: 3}
+  m_Name: Trigger On Object Click
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -476, y: -185}
+  ports:
+    keys:
+    - Next
+    - Next 0
+    values:
+    - _fieldName: Next
+      _node: {fileID: -7526944692537886238}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ambiens.archtoolkit.atexplore.actionSystem.AAction,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next 0
+      _node: {fileID: -7526944692537886238}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ambiens.archtoolkit.atexplore.actionSystem.AAction,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Caller
+        node: {fileID: -4534412308733012097}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  Next:
+  - {fileID: 0}
+  __ID: Trigger On Object Click-7J93SDUS2V
+--- !u!114 &-4534412308733012097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30515d814d017a24fb07beaafc73f317, type: 3}
+  m_Name: Dotween Action
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -88, y: -184}
+  ports:
+    keys:
+    - Caller
+    - Next
+    values:
+    - _fieldName: Caller
+      _node: {fileID: -4534412308733012097}
+      _typeQualifiedName: ambiens.archtoolkit.atexplore.actionSystem.AActionNodeBase,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Next 0
+        node: {fileID: -7526944692537886238}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Next
+      _node: {fileID: -4534412308733012097}
+      _typeQualifiedName: System.Collections.Generic.List`1[[ambiens.archtoolkit.atexplore.actionSystem.AAction,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Next: []
+  __ID: Dotween Action-BQLIQBWE1P
+  Caller: {fileID: 0}
+  SceneReferences:
+  - {fileID: 0}
+  ReferenceHolder: {fileID: 0}
+  startVisibility: 0
+  ForceVisibilityTo: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285df6823ab1f49a7b9165a7a7d70758, type: 3}
+  m_Name: Action Sequence
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7526944692537886238}
+  - {fileID: -4534412308733012097}

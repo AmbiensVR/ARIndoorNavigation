@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1858774782, guid: e8df325caae369542ba045e39e8c7487, type: 3}
+  m_Name: Ufficio_{3D}_366070
+  m_EditorClassIdentifier: 
+  mScene:
+    assets:
+      meshData: []
+      textureData: []
+      materialData: []
+    mObjectWrapper: []
+    metaData:
+      fix: 1
+      vectorFix:
+      - 1
+      - 1
+      - 1
+      duplicateFaces: 0
+      AO: 1
+      AOint: 0.5
+      AOrad: 1
+      version: 1
+      cPos:
+      - 0
+      - 0
+      - 0
+      cRot:
+      - 0
+      - 0
+      - 0
+      bbS: []
+      bbC: []
+      processCompleted: []
+      CloudProjectID: -1
+      metakv: []
+    layerList: []
+  path: 
